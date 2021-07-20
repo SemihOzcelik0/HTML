@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>HTML Radio Check</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Semih Özçelik">
+        <meta name="keywords" content="HTML ,Radio, Check">
+        <meta name="description" content="HTML Radio Check">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="photos/favicon.ico">
+        <style>
+            #menu{
+                position: relative;
+                left: 80px;
+                top: 15px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(photos/burger-menu-border.jpg); background-repeat: no-repeat;">
+        <!--<h1>Burger King</h1>
+        <form name="menu">
+            <input type="radio" name="menuboy" value="buyukboy"> Büyük Boy Patates - Kola : 2.25 ₺
+            <br>
+            <input type="radio" name="menuboy" value="kingboy"> King Boy Patates - Kola : 3.00 ₺ 
+            <br><br>
+            <input type="submit" value="Sipariş Oluştur">
+            <input type="reset" value="Seçimleri Sıfırla">
+        </form>-->
+        <form id="menu" name="menu"  method="GET">
+            <table>
+                <tr><td></td><td><h2>Menü Boyu</h2></td></tr>
+                <tr><td><input type="radio" name="menuboy" value="buyukboy"></td> <td>Büyük Boy Patates - Kola : 2.25 ₺</td></tr>
+                <tr><td><input type="radio" name="menuboy" value="kingboy"></td> <td> King Boy Patates - Kola : 3.00 ₺ </td></tr>
+                <tr><td></td><td><h2>Promosyon Seç</h2></td></tr>
+                <tr><td><input type="checkbox" name="istemiyor" checked></td><td> Promosyon İstemiyorum</td></tr> <!--checked etiketi seçili gelmesini sağlar-->
+                <tr><td><input type="checkbox" name="dortlu-tenders"></td><td>4'lü Chicken Tenders - 5.90 ₺</td></tr>
+                <tr><td><input type="checkbox" name="altılı-tenders"></td><td>6'lı Chicken Tenders - 7.90 ₺</td></tr>
+                <tr><td><input type="checkbox" name="altılı-sogan"></td><td>6'lı Soğan Halkası - 5.90 ₺</td></tr>
+                <tr><td><input type="checkbox" name="onikili-sogan"></td><td>12'lı Soğan Halkası - 7.90 ₺</td></tr>
+                <tr><td><input type="checkbox" name="onaltılı-sogan"></td><td>16'lı Soğan Halkası - 9.90 ₺</td></tr>
+            </table>
+            <br>
+            <input type="submit" value="Sipariş Oluştur"><input type="reset" value="Seçimleri Sıfırla">
+            <!--radio tipinde isimleri aynı, değerleri farklıyken checkbox tipinde isimleri farklı yazılır-->
+         </form>
+    </body>
+</html>

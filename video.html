@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+    <head>
+        <title>HTML'de Video Oynatma</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Semih Özçelik">
+        <meta name="keywords" content="HTML, video, oynatma">
+        <meta name="description" content="HTML'de video oynatma">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="photos/favicon.ico">
+        <style>
+            #ses{
+                position: relative;
+                left: 1000px;
+                bottom: 320px;
+            }
+            #baslık{
+                position: relative;
+                left: 1000px;
+                bottom: 300px;
+            }
+            #heripotur{
+                position: relative;
+                left: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heripotur">Harry Potter</h1>
+       <!-- <video id="video" src="videos/Harry_Potter.mp4" controls width="40%" loop muted autoplay> --> <!--Tek seferde eklemek için bu şekilde yazılır-->
+        <video controls width="40%" loop autoplay muted> <!--"preload" etiketi videonun açıldığında indirilmesini sağlar-->
+            <source src="videos/Harry_Potter.mp4" type="video/mp4">
+            <source src="videos/Harry_Potter.mp4" type="video/ogg">    <!--Farklı tarayıcılarda sorun yaşamamak için source etiketi içerisinde videolar verilir-->
+            <source src="videos/Harry_Potter.mp4" type="video/webm">
+
+        </video>
+        <h1 id="baslık">Emre Fel - Merhabalar</h1>
+        <br>
+       <!-- <audio id="ses" src="music/Emre_Fel.mp3" controls></audio>--> <!--Doğrudan eklemek için bu şekilde yazılabilir-->
+        <audio id="ses" controls>
+            <source src="music/Emre_Fel.mp3">
+            <source src="music/Emre_Fel.WAW">        <!--Video etiketindeki bütün özellikler ses içinde geçerlidir-->
+            <source src="music/Emre_Fel.ogg">
+        </audio>
+
+    </body>
+</html>

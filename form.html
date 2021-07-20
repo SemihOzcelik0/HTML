@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML'de Form Oluşturma</title>
+        <meta name="author" content="Semih Özçelik">
+        <meta name="keywords" content="HTML, form, oluşturma">
+        <meta name="description" content="HTML'de form oluşturma">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <link rel="shortcut icon" href="photos/favicon.ico">
+    </head>
+    <body>
+        <h1>Üye Kayıt Formu</h1>
+        <form  name="kayit" action="kayit.php" method="GET"> <!--GET metodu verileri görünür şekilde gönderirken POST gizli şekilde göndermeyi sağlar-->
+            <table border="1" style="border-collapse: collapse;">
+                <tr><td>*Ad Soyad :</td> <td><input type="text" name="adsoyad" size="20" maxlength="30" id="adsoyad"  required ></td></tr>
+
+                <tr><td>*E-mail :</td><td><input type="email" name="email" id="email" required></td></tr>
+
+                <tr><td>*Şikayet :</td><td><input type="text" name="sikayet" size="20" maxlength="30" id="sikayet" required></td></tr> 
+
+                <tr><td>Web Sitesi :</td> <td><input type="url" name="addres" id="addres" ></td></tr>
+
+                <tr><td>Yaşınız :</td> <td><input type="number" name="yasiniz" id="yas" min="0"></td></tr>
+                <!--size form'un kaç karakter genişliğinde olacağını, maxlength en fazla kaç karakter yazılabileceğini
+                required doldurmanın zorunlu olduğunu gösterir-->
+                <tfoot>
+                <tr><td></td><td><input type="submit" value="Şikayeti Gönder"><input type="reset"></td></tr> <!--value komutu ile butonun adını değiştirmek mümkündür-->
+                </tfoot>
+            </table>
+        </form>
+    </body>
+</html>
